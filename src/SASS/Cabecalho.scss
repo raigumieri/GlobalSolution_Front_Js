@@ -1,0 +1,77 @@
+.cabecalho_geral{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    position: relative;
+    padding: 2%;
+    background: #3d3b53;
+    color: white;
+
+    .titulo_cabecalho{
+        h1{
+            font-size: 40px;
+        }
+
+        h1:hover{
+            color: rgb(168, 7, 243);
+            transition: 1s;
+        }
+
+        .cliente{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2px;
+            font-size: 15px;
+        }
+
+    }
+
+    .rotas{
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+        align-items: center;
+
+        .Home{
+            color: white;
+            text-decoration: none;
+            margin: auto;
+            width: auto;
+        }
+        
+        .Home:hover{
+            color: rgb(168, 7, 243);
+            transition: 1s;
+        }
+
+
+        .Login{
+            color: white;
+            text-decoration: none;
+            margin: auto;
+            width: auto;
+        }
+      
+        .Login:hover{
+            color: rgb(168, 7, 243);
+            transition: 1s;
+        }
+
+
+        .deslogar{
+            width: auto;
+            padding: 5px;
+            margin: auto;
+            background: none;
+            color: white;
+        }
+
+        button:hover{
+            color: white;
+            background:rgb(168, 7, 243) ;
+            transition: 1s;
+        }
+        
+    }
+
+}

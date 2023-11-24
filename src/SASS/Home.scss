@@ -1,0 +1,203 @@
+// Layout em geral
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+// Editando Main
+main{
+    background: #232838;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+
+    //Parte Esquerda do site
+    .parte_esquerda{
+        img{
+            width: 88%;
+            margin: 2%;
+        }
+
+        .apresentacao{
+            width: 80%;
+            margin: auto;
+
+            .bloco_apresentacao{
+                display: flex; 
+                align-items: center;
+                text-align: center;
+                color: white;
+                
+                .texto{
+                    border: 1px solid black;
+                    padding: 8%;
+                    margin-left: 5%;
+                    text-align: justify;
+                    background: #635777;
+
+                    .paragrafo{
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+            button{
+                margin-left: 80%;
+                margin-top: 2%;
+                width: 20%;
+                padding: 1%;
+                background-color: #e2abde;
+                border-radius: 5px;
+            }
+
+            button:hover{
+                background-color: #9a7ca6;
+                color: white;
+                transition: 1s;
+            }
+
+        }
+    }
+
+    //Parte Direita do site
+    .parte_direita{
+        margin: auto;
+
+        .explicacao{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            margin-top: 18px;
+
+            .bloco1{
+                padding: 10%;
+                border: 1px solid black;
+                text-align: justify;
+                background: #635777;
+                color: white;
+            }
+
+            .bloco2{
+                padding: 10%;
+                border: 1px solid black;
+                text-align: justify;
+                background: #635777;
+                color: white;
+            }
+
+            .bloco3{
+                padding: 10%;
+                border: 1px solid black;
+                text-align: justify;
+                background: #635777;
+                color: white;
+            }
+        }     
+    }
+
+}   
+
+//Responsividade das partes Esquerda e Direita
+@media screen and (max-width:1300px) {
+    main{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "image image image"
+        "meio1 meio1"
+        "final final final"
+        ;
+
+        .parte_esquerda{
+
+            img{
+                width: 95%;
+                margin: 2%;
+            }
+
+            .sessao_imagem{
+                margin: auto;
+                width: auto;
+                grid-area: image;
+            }
+
+            .apresentacao{
+                grid-area: meio1;
+                margin: auto;
+                width: 90%;
+                position: relative;
+            }
+
+        }
+
+        .parte_direita{
+            .explicacao{
+                margin: 1%;
+            }
+        }
+
+        h2{
+            text-align: center;
+        }
+
+    }
+    
+}
+
+
+
+
+//Vantagens e Benenficios
+.vantagens{
+    display: flex;
+    justify-content: space-between;
+    background: #232838;
+    color: white;
+
+    //Parte 1
+    .parte1{
+        display: flex;
+        align-items: center;
+    }
+
+    //Parte 2
+    .parte2{
+        display: flex;
+        align-items: center;
+    }
+
+    //Parte 3
+    .parte3{
+        display: flex;
+        align-items: center;
+    }
+
+
+    img{
+        width: 40%;
+    }          
+    
+}
+
+//Responsividade das Vantagens
+@media screen and (max-width:1300px) {
+    .vantagens{
+        display: grid;
+        grid-area: final final;
+
+        img{
+            width: 20%;
+            padding: 2px;
+        }
+    }
+
+
+}
+
+
+
+
+    
