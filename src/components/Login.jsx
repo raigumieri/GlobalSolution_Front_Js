@@ -68,7 +68,7 @@ export default function Login() {
             <form onSubmit={handleSubmit}>
 
                 <div className='Usuario'>
-                    <label htmlFor='idEmail'> Usuário </label>
+                    <label htmlFor='idEmail'> Usuário: </label>
                     <input type="text" name="email" value={usuario.email} placeholder="Digite seu Email" onChange={handleChange} />
                 </div>
 
